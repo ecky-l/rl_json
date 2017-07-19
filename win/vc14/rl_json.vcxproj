@@ -86,7 +86,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(TCL32_HOME)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_TCL_STUBS=1;PACKAGE_NAME="rl_json";PACKAGE_VERSION="0.9.8";_CRT_SECURE_NO_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_TCL_STUBS=1;PACKAGE_NAME="rl_json";PACKAGE_VERSION="0.9.9";_CRT_SECURE_NO_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
       <MinimalRebuild>false</MinimalRebuild>
@@ -97,7 +97,8 @@
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <PostBuildEvent>
-      <Command>cp $(TargetPath) $(SolutionDir)..\..\lib$(ProjectName)0.9.8-win32$(TargetExt)</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -106,7 +107,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(TCL64_HOME)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_TCL_STUBS=1;PACKAGE_NAME="rl_json";PACKAGE_VERSION="0.9.8";_CRT_SECURE_NO_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_TCL_STUBS=1;PACKAGE_NAME="rl_json";PACKAGE_VERSION="0.9.9";_CRT_SECURE_NO_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
       <MinimalRebuild>false</MinimalRebuild>
@@ -117,7 +118,8 @@
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <PostBuildEvent>
-      <Command>cp $(TargetPath) $(SolutionDir)..\..\lib$(ProjectName)0.9.8-win64$(TargetExt)</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -128,7 +130,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(TCL64_HOME)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_TCL_STUBS=1;PACKAGE_NAME="rl_json";PACKAGE_VERSION="0.9.8";_CRT_SECURE_NO_WARNINGS=1;PACKAGE_NAME="rl_json";PACKAGE_VERSION="0.9.8";_CRT_SECURE_NO_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_TCL_STUBS=1;PACKAGE_NAME="rl_json";PACKAGE_VERSION="0.9.9";_CRT_SECURE_NO_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -138,7 +140,7 @@
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <PostBuildEvent>
-      <Command>cp $(TargetPath) $(SolutionDir)..\..\lib$(ProjectName)0.9.8-win32$(TargetExt)</Command>
+      <Command>cp $(TargetPath) $(SolutionDir)..\..\lib$(ProjectName)0.9.9-win32$(TargetExt)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -149,7 +151,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(TCL64_HOME)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_TCL_STUBS=1;PACKAGE_NAME="rl_json";PACKAGE_VERSION="0.9.8";_CRT_SECURE_NO_WARNINGS=1;PACKAGE_NAME="rl_json";PACKAGE_VERSION="0.9.8";_CRT_SECURE_NO_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_TCL_STUBS=1;PACKAGE_NAME="rl_json";PACKAGE_VERSION="0.9.9";_CRT_SECURE_NO_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -159,7 +161,7 @@
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <PostBuildEvent>
-      <Command>cp $(TargetPath) $(SolutionDir)..\..\lib$(ProjectName)0.9.8-win64$(TargetExt)</Command>
+      <Command>cp $(TargetPath) $(SolutionDir)..\..\lib$(ProjectName)0.9.9-win64$(TargetExt)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
