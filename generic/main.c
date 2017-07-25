@@ -137,23 +137,23 @@ static int first_free(long long* freemap) //{{{
 	while ((bit = FFSLL(freemap[i])) == 0) {
 		i++;
 	}
-	res = i * (sizeof(unsigned long)*8) + (bit-1);
+	res = i * (sizeof(long long)*8) + (bit-1);
 	return res;
 }
 
 //}}}
-static void mark_used(unsigned long* freemap, int idx) //{{{
+static void mark_used(long long* freemap, int idx) //{{{
 {
-	int	i = idx / (sizeof(unsigned long)*8);
-	int bit = idx - (i * (sizeof(unsigned long)*8));
+	int	i = idx / (sizeof(long long)*8);
+	int bit = idx - (i * (sizeof(long long)*8));
 	freemap[i] &= ~(1LL << bit);
 }
 
 //}}}
-static void mark_free(unsigned long* freemap, int idx) //{{{
+static void mark_free(long long* freemap, int idx) //{{{
 {
-	int	i = idx / (sizeof(unsigned long)*8);
-	int bit = idx - (i * (sizeof(unsigned long)*8));
+	int	i = idx / (sizeof(long long)*8);
+	int bit = idx - (i * (sizeof(long long)*8));
 	freemap[i] |= 1LL << bit;
 }
 

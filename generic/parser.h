@@ -34,7 +34,7 @@ struct interp_cx {
 	Tcl_Obj*		json_null;
 	Tcl_HashTable	kc;
 	int				kc_count;
-	unsigned long		freemap[(KC_ENTRIES / (8*sizeof(long long)))+1];	// long long for ffsll
+	long long		freemap[(KC_ENTRIES / (8*sizeof(long long)))+1];	// long long for ffsll
 	struct kc_entry	kc_entries[KC_ENTRIES];
 };
 
